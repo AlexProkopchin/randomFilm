@@ -160,6 +160,11 @@ if(!empty($_GET))
 						<?=$str->{'docs'}[$randFilmID]->{'description'};?>
 					</p>
 				</div>
+				<div class="player">
+					<!-- Можно искать онлайн фильмы по ID КиноПоиск -->
+					<div id="yohoho" data-kinopoisk="<?=$str->{'docs'}[$randFilmID]->{'id'};?>"></div>
+					<script src="//yohoho.cc/yo.js"></script>
+				</div>
 			<?endif;?>
 
 	</form>
